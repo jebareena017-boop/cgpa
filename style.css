@@ -276,6 +276,52 @@ footer {
     border: 1px solid #a7f3d0;
 }
 
+/* Campus Weather Badge */
+.weather-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.weather-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #ffffff;
+    gap: 8px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.weather-icon-fallback {
+    font-size: 16px;
+}
+
+.weather-temp {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.weather-desc {
+    opacity: 0.95;
+    font-size: 12px;
+}
+
+.weather-city {
+    opacity: 0.85;
+    font-size: 12px;
+}
+
 @media (max-width: 600px) {
 
     main {
