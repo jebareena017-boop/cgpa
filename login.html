@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJC MCA CGPA Calculator - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+
+<header>
+    <h1>SJC MCA CGPA Calculator</h1>
+    <p>St. Joseph's College (Autonomous), Tiruchirappalli</p>
+</header>
+
+<main class="login-wrapper">
+    <div class="login-card">
+        <h2 id="formTitle">Student Login</h2>
+        <p class="login-subtitle" id="formSubtitle">Enter your college email and password to access your saved calculations.</p>
+
+        <!-- Message Box for Alerts -->
+        <div id="authMessage" class="auth-message" style="display: none;"></div>
+
+        <form id="authForm" onsubmit="handleAuth(event)">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="student@sjc.edu" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password (min 6 chars)" minlength="6" required>
+            </div>
+
+            <button type="submit" id="submitBtn" class="btn-primary-block">Log In</button>
+        </form>
+
+        <div class="toggle-link">
+            <span id="toggleText">Don't have an account?</span>
+            <a href="javascript:void(0)" onclick="toggleAuthMode()" id="toggleBtn">Register here</a>
+        </div>
+
+        <div class="guest-link">
+            <a href="index.html">Continue to Calculator as Guest &rarr;</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>SJC MCA CGPA Calculator &copy; St. Joseph's College (Autonomous), Tiruchirappalli</p>
+</footer>
+
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="auth.js"></script>
+
+</body>
+</html>
