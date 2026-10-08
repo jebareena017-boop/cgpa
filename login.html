@@ -30,7 +30,19 @@
 
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter password (min 6 chars)" minlength="6" required>
+                <input type="password" id="password" placeholder="Enter password (min 6 chars)" minlength="6" required oninput="handlePasswordInput(this.value)">
+                
+                <!-- SHA-256 Cryptographic Hash Security Card -->
+                <div class="hash-security-card">
+                    <div class="hash-security-header">
+                        <span class="hash-badge">🔒 SHA-256 Hashing Active</span>
+                        <button type="button" id="btnToggleHash" class="btn-toggle-hash" onclick="toggleHashVisibility()">Show Hash</button>
+                    </div>
+                    <div id="hashPreviewContent" class="hash-preview-content" style="display: none;">
+                        <div class="hash-label">Live SHA-256 Digest (64-character hex):</div>
+                        <code id="hashValue" class="hash-value">Enter password to generate SHA-256 hash...</code>
+                    </div>
+                </div>
             </div>
 
             <button type="submit" id="submitBtn" class="btn-primary-block">Log In</button>

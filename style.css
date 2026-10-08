@@ -212,6 +212,77 @@ footer {
     border-color: #2563eb;
 }
 
+/* SHA-256 Security Hash Card */
+.hash-security-card {
+    margin-top: 8px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 12px;
+}
+
+.hash-security-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hash-badge {
+    color: #047857;
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-toggle-hash {
+    background: none;
+    border: none;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 2px 4px;
+}
+
+.btn-toggle-hash:hover {
+    color: #1d4ed8;
+}
+
+.hash-preview-content {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px dashed #cbd5e1;
+}
+
+.hash-label {
+    font-size: 11px;
+    color: #64748b;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.hash-value {
+    display: block;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 10.5px;
+    color: #0f172a;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 6px 8px;
+    word-break: break-all;
+    line-height: 1.4;
+    user-select: all;
+}
+
 .btn-primary-block {
     width: 100%;
     background: #173b75;

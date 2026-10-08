@@ -7,6 +7,7 @@ A web-based SGPA and CGPA Calculator developed for **St. Joseph's College (Auton
 - **SGPA Calculator**: Enter subject names, marks (0-100), and credit weightages. Automatically computes letter grades and grade points according to St. Joseph's College PG grading rules.
 - **CGPA Calculator**: Compute cumulative GPA across semesters weighted by semester credits.
 - **Dedicated Student Authentication (`login.html`)**: Register and sign in using your college email and password.
+- **SHA-256 Password Hashing**: Passwords are cryptographically hashed using **SHA-256** (256-bit hash digest) before authentication, complete with a live real-time hash inspector widget on the login page.
 - **Cloud Firestore Database**:
   - Save SGPA calculations with subject details and credits.
   - Save CGPA records to your cloud profile.
